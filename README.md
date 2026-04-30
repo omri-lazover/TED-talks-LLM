@@ -25,7 +25,7 @@ Models (see code for exact IDs) use **llmod.ai** as `base_url` with embedding an
 - **llmod.ai** (or compatible) API key, exposed in `.env` as `OPENAI_API_KEY`
 - **Pinecone** API key, `PINECONE_API_KEY`
 
-Dataset for the pipeline: place **`ted_talks_en.csv`** in the project root (not shipped in this repo). Adjust paths in `embedding_pipeline_full.py` if your layout differs.
+Dataset for the pipeline: **`ted_talks_en.csv`** is included in this repository (~43 MB English TED talks export). Other CSVs (e.g. reduced subsets) stay gitignored. Adjust paths in `embedding_pipeline_full.py` if your layout differs.
 
 ---
 
@@ -115,5 +115,5 @@ curl -X POST http://127.0.0.1:5000/api/prompt -H "Content-Type: application/json
 ├── chunking_text.py            # Optional: chunking only
 ├── embedding.py                # Optional: embeddings only
 ├── upload_to_pinecone.py       # Optional: upload only
+├── ted_talks_en.csv            # Source dataset (tracked)
 └── README.md
-```

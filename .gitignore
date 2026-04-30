@@ -22,8 +22,9 @@ venv/
 # Exception: Vercel routing config only
 !vercel.json
 
-# Datasets (covers ted_talks_en_reduced.csv and other CSVs)
+# Datasets: ignore CSVs by default, but keep the canonical source for the pipeline
 *.csv
+!ted_talks_en.csv
 
 # Local test logs
 test_results*.txt
