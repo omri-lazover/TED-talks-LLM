@@ -9,8 +9,8 @@ import os
 # לריצה הסופית - תחליף חזרה ל-'ted_talks_en.csv'
 INPUT_CSV_FILE = 'ted_talks_en_reduced.csv'
 
-CHUNK_SIZE_WORDS = 512
-OVERLAP_WORDS = 50
+CHUNK_SIZE_WORDS = 1000
+OVERLAP_WORDS = 100
 OUTPUT_FILE = 'ted_talks_chunks.json'  # הקובץ שיווצר
 
 
