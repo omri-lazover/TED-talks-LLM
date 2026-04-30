@@ -1,0 +1,32 @@
+# Environment and secrets
+.env
+.env.*
+API_key_pinecone
+key.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / tooling
+.idea/
+.pytest_cache/
+
+# Archives
+*.zip
+
+# JSON data and build artifacts (always exclude)
+*.json
+# Exception: Vercel routing config only
+!vercel.json
+
+# Datasets (covers ted_talks_en_reduced.csv and other CSVs)
+*.csv
+
+# Local test logs
+test_results*.txt
+
+# Course PDF (may contain identifying info)
+Individual Assignment.pdf
